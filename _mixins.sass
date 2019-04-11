@@ -1,0 +1,18 @@
+// RESET VALUES MIXIN
+html,
+body,
+ul,
+ol
+	margin:  0
+	padding: 0
+
+// TRANSFORM MIXIN
+=transform($property)
+	-webkit-transform: $property
+	-ms-transform: $property
+	transform: $property
+
+// MEDIAQUERIE MIXIN
+=mq($type,$value)
+	@media(#{$type}-width: #{$value}px)
+		@content
