@@ -1,0 +1,12 @@
+form.was-validated .form-control:valid {
+  border-color: #ced4da;
+  padding: 0.375rem 0.75rem;
+  background: #fff;
+}
+form.was-validated .form-control:valid:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form.was-validated .form-control:invalid {
+  background-position: center right calc(.375em + 0.7875rem);
+}
