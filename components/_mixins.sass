@@ -17,3 +17,16 @@
 =mq($type,$value)
 	@media(#{$type}-width: #{$value}px)
 		@content
+// BROWSER KITS
+=kit($property,$value)
+    -webkit-'#{$property}': '#{$value}'
+    -moz-'#{$property}': '#{$value}'
+    -ms-'#{$property}': '#{$value}'
+    -o-'#{$property}': '#{$value}'
+    '{$property}': '#{$value}'
+
+// WEBFONT/FONTFACE MIXIN
+=ff($family,$path,$format)
+    @font-face
+        font-family: '#{$family}'
+        src: url('#{$path}') format('#{$format}')
