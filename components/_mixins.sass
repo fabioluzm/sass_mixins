@@ -27,11 +27,11 @@
 
 // BROWSER KITS
 =kit($property,$value)
-    -webkit-'#{$property}': '#{$value}'
-    -moz-'#{$property}': '#{$value}'
-    -ms-'#{$property}': '#{$value}'
-    -o-'#{$property}': '#{$value}'
-    '{$property}': '#{$value}'
+    -webkit-#{$property}: #{$value}
+    -moz-#{$property}: #{$value}
+    -ms-#{$property}: #{$value}
+    -o-#{$property}: #{$value}
+    #{$property}: #{$value}
 
 // WEBFONT/FONTFACE MIXIN
 =ff($family,$path,$format)
